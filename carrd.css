@@ -49,7 +49,7 @@ input#open{
     position: absolute;
     width: 500px;
     height: 670px;
-    background-image: url('mat/leap2.png');
+    background-image: url('mat/leap2.PNG');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
