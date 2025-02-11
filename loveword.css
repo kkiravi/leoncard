@@ -1,0 +1,86 @@
+@import url("style.css");
+.papercard{
+    position: relative;
+    background-color: rgb(117, 117, 117);
+    width: 500px;
+    height: 670px;
+    box-shadow: 
+        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
+        30px 30px 50px rgba(0, 0, 0, 0.3); 
+    background-image: url("mat/notes.PNG");
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: italic;
+    background-color: #1B1A1A;
+    background-image: url('mat/lovewor.jpg');
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p{
+    height: 130px; 
+    word-wrap: break-word; 
+    position: absolute;
+    flex-direction: column;
+    font-size: 30px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.signa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 35px;  
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: 5px; 
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0; 
+    text-align: center;
+    color: white; 
+    font-size: 70px;
+    
+}
+.stich{
+    width: 350px;
+    top: 23%;
+}
+
+.stich2{
+    top: 32%;
+    width: 420px;
+}
+
+.stich3{
+    top: 46%;
+    width: 460px;
+}
+
+.stich4{
+    top: 69%;
+    width: 400px;
+}

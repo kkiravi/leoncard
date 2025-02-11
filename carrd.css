@@ -1,0 +1,200 @@
+@import url("style.css");
+body{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: italic;
+    background-color: #1B1A1A;
+    background-image: url('mat/background1.jpg');
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+input#open{
+    display: none;
+}
+
+.valentine-card{
+    position: absolute;
+    width: 500px;
+    height: 670px;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: .3s;
+    
+}
+
+.card-front{
+    position: absolute;
+    background-color: rgb(117, 117, 117);
+    width: 500px;
+    height: 670px;
+    transform-origin: left center;
+    box-shadow: 
+        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
+        30px 30px 50px rgba(0, 0, 0, 0.3); 
+    transition: .3s;
+    left: 0;
+    top: 0;
+}
+
+.card-front:before{
+    content:"";
+    position: absolute;
+    width: 500px;
+    height: 670px;
+    background-image: url('mat/leap2.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    box-shadow: 
+        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
+        30px 30px 50px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+.card-inside{
+    position: relative;
+    background-color: black;
+    background-image: url('mat/backcard3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 670px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: 
+        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
+        30px 30px 50px rgba(0, 0, 0, 0.3); 
+   
+}
+
+.open{
+    position: absolute;
+    width: 500px;
+    height: 670px;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 
+        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
+        30px 30px 50px rgba(0, 0, 0, 0.3); 
+}
+
+#open:checked ~ .card-front{
+    transform: rotateY(-120deg);
+    transition: transform 0.8 ease-in-out;
+    box-shadow: 
+        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
+        30px 30px 50px rgba(0, 0, 0, 0.3); 
+
+}
+
+#open:checked ~ .card-front:before{
+    z-index: -1;
+    background-color: black;
+    width: 500px;
+    height: 670px;
+    top: 0;
+    left: 0;
+     
+    background-image: url('mat/vitgab.jpg'); 
+    background-size: 432px 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+ p { 
+
+    color: #fff; 
+    margin: 10px 0; 
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 35px;  
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: 5px; 
+    font-family: Yesteryear-Regular;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0; 
+    text-align: center;
+    color:black; 
+    font-size: 70px;
+    
+
+}
+    
+
+
+.bod, .head {
+    height: 130px; 
+    word-wrap: break-word; 
+    position: absolute;
+    flex-direction: column;
+    
+    
+}
+
+button {
+    position: absolute;
+    bottom: 2%; 
+    transform: translateX(-50%); 
+    background-color: #1B1A1A;
+    width: 200px;
+    height: 90px; 
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.head{
+    bottom: 68%;
+    position:absolute; 
+    font-size: 25px;
+    width: 300px;
+
+}
+.bod{
+    top: 25%;
+    font-size: 20px;
+    width: 370px;
+}
+
+.hey{
+    right: 31%;
+}
+
+.loveword{
+    left: 42%;
+    font-family: Pacifico-Regular;
+}
+
+.buttonlist{
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Knewave&display=swap');
+@font-face{
+    font-family: "Kanit-LightItalic";
+    src: url("mat/Kanit-LightItalic.ttf");
+}
+@font-face{
+    font-family: "Yesteryear-Regular";
+    src: url("mat/Yesteryear-Regular.ttf");
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+@font-face{
+    font-family: "Pacifico-Regular";
+    src: url("mat/Pacifico-Regular.ttf");
+}
+@font-face{
+    font-family: "Oswald";
+    src: url("mat/Oswald-Variable.ttf");
+}
