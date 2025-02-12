@@ -22,8 +22,7 @@ body{
     height: 1000px;
     position: relative;
     right: 4%;
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7)); /* Тень только на объект картинки */
-}
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7)); 
 
 
 .hetext{
