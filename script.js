@@ -7,7 +7,7 @@ function replace(page) {
         if (page === 'hey') {
             document.body.innerHTML = `
                 <div class="imagehey">
-                    <img src="mat/heyhey.png">
+                    <img src="mat/heyhey.PNG">
                 </div>
                 <h1 class="hetext">𝒸𝒶𝓂</h1>
             `;
