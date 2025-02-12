@@ -30,7 +30,6 @@ input#open {
     transition: .3s;
 }
 
-/* Делаем открытку адаптивной */
 @media (max-width: 600px) {
     .valentine-card, .card-front, .card-inside {
         width: 90vw;
