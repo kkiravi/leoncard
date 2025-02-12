@@ -1,6 +1,5 @@
-@import url("style.css");
 
-body {
+body{
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -9,174 +8,31 @@ body {
     font-family: "Kanit", serif;
     font-weight: 600;
     font-style: italic;
-    background-color: #1B1A1A;
-    background-image: url('mat/background1.jpg');
-    background-repeat: no-repeat;
+    background-color: black;
+    background-repeat: none;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-image: url('mat/lovewor.jpg');
 }
 
-input#open {
-    display: none;
-}
 
-.valentine-card {
-    position: absolute;
-    width: 500px;
-    height: 670px;
-    transform-style: preserve-3d;
-    transform: perspective(2500px);
-    transition: .3s;
-}
-
-@media (max-width: 600px) {
-    .valentine-card, .card-front, .card-inside {
-        width: 90vw;
-        height: 120vw;
-        max-width: 350px;
-        max-height: 500px;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    .head {
-        font-size: 20px;
-        width: 80%;
-    }
-    .bod {
-        font-size: 16px;
-        width: 85%;
-    }
-    button {
-        width: 150px;
-        height: 60px;
-        font-size: 20px;
-    }
-}
-
-.card-front {
-    position: absolute;
-    background-color: rgb(117, 117, 117);
-    width: 100%;
-    height: 100%;
-    transform-origin: left center;
-    box-shadow: 
-        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
-        30px 30px 50px rgba(0, 0, 0, 0.3);
-    transition: .3s;
-    left: 0;
-    top: 0;
-}
-
-.card-front:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('mat/leap2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 
-        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
-        30px 30px 50px rgba(0, 0, 0, 0.3);
-}
-
-.card-inside {
+.imagehey img {
+    width: 1000px;
+    height: 1000px;
     position: relative;
-    background-color: black;
-    background-image: url('mat/backcard3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    box-shadow: 
-        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
-        30px 30px 50px rgba(0, 0, 0, 0.3);
+    right: 4%;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7)); /* Тень только на объект картинки */
 }
 
-.open {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 7;
-    cursor: pointer;
-    background-color: transparent;
-    box-shadow: 
-        inset 100px 20px 100px rgba(0, 0, 0, 0.15), 
-        30px 30px 50px rgba(0, 0, 0, 0.3);
-}
 
-#open:checked ~ .card-front {
-    transform: rotateY(-120deg);
-    transition: transform 0.8s ease-in-out;
-}
-
-#open:checked ~ .card-front:before {
-    z-index: -1;
-    background-color: black;
-    background-image: url('mat/vitgab.jpg');
-    background-size: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-p {
-    color: #fff;
-    margin: 10px 0;
-    text-align: center;
-}
-
-h1 {
+.hetext{
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 5px;
-    font-family: Yesteryear-Regular;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    font-size: 70px;
-}
-
-.bod, .head {
-    position: absolute;
-    flex-direction: column;
-}
-
-button {
-    position: absolute;
-    bottom: 2%;
-    transform: translateX(-50%);
-    background-color: #1B1A1A;
-    width: 200px;
-    height: 90px;
-    font-size: 30px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.head {
-    bottom: 68%;
-    font-size: 25px;
-    width: 300px;
-}
-
-.bod {
-    top: 25%;
-    font-size: 20px;
-    width: 370px;
+    top: 40px;  
+    font-size: 55px;
+    right: 49%;
 }
